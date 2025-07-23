@@ -1,0 +1,20 @@
+# Vivado unwanted files
+*.log
+*.jou
+*.str
+*.csv
+*.html
+*.xml
+*.tmp
+*.backup
+.cache/
+.hw/
+.runs/
+.sim/
+.webtalk/
+.ip_user_files/
+.Xil/
+.vivado/
+*.wdb
+*.xpr.cache
+*.xgui
