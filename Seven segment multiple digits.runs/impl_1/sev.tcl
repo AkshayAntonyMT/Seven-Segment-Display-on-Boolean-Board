@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/aksha/OneDrive/Desktop/Vivado/Seven segment multiple digits/Seven segment multiple digits.runs/impl_1/sev.tcl"
+  variable script "C:/Users/aksha/OneDrive/Desktop/Vivado/Seven Segment Display on Boolean Board/Seven segment multiple digits.runs/impl_1/sev.tcl"
   variable category "vivado_impl"
 }
 
@@ -109,11 +109,12 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
   set_param general.usePosixSpawnForFork 1
-  set_param synth.incrementalSynthesisCache C:/Users/aksha/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14676-AKSHAY/incrSyn
+  set_param synth.incrementalSynthesisCache {C:/Users/aksha/OneDrive/Desktop/Vivado/Seven Segment Display on Boolean Board/.Xil/Vivado-19920-AKSHAY/incrSyn}
   set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint sev_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/aksha/OneDrive/Desktop/Vivado/Seven segment multiple digits/Seven segment multiple digits.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/aksha/OneDrive/Desktop/Vivado/Seven Segment Display on Boolean Board/Seven segment multiple digits.cache/wt} [current_project]
 set_property TOP sev [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

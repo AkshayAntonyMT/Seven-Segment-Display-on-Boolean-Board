@@ -33,17 +33,23 @@ output dp
 
 reg [1:0] refresh;
 reg [3:0]value;
+reg [16:0] count = 0;  // Can count up to at least 100000
+reg [1:0] refresh = 0;
 
 assign dp = 1;
 
-always@(posedge clk)
-refresh <= refresh + 1;
+always @(posedge clk) begin
+    if (count >= 100_000) begin
+        count <= 0;
+        refresh <= refresh + 1;
+    end
+     else begin
+        count <= count + 1;
+    end
+end
 
 always@(*)
 begin
-anode = 8'b11111111;
-value = 3'b000;
-seven = 7'b0000000;
 case(refresh)
 2'b00: begin
     anode = 8'b11111110;

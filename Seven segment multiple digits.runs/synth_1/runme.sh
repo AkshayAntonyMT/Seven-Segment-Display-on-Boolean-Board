@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/aksha/OneDrive/Desktop/Vivado/Seven segment multiple digits/Seven segment multiple digits.runs/synth_1'
+HD_PWD='C:/Users/aksha/OneDrive/Desktop/Vivado/Seven Segment Display on Boolean Board/Seven segment multiple digits.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
