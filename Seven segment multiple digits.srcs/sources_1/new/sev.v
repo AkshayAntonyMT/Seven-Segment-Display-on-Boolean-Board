@@ -78,7 +78,7 @@ case(value)
     7'h5: seven = 7'b0100100;
     7'h6: seven = 7'b0100000;
     7'h7: seven = 7'b0001111;
-    7'h8: seven  = 7'b0000000;
+    7'h8: seven = 7'b0000000;
     7'h9: seven = 7'b0000100;
     7'hA: seven = 7'b0001000;
     7'hB: seven = 7'b0000000;
